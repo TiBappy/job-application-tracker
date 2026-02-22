@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <!-- Tailwind + Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- Header Section -->
+    <header class="py-5 bg-base-200">
+      <section class="header-container w-10/12 mx-auto">
+        <div class="header-text">
+          <h1 class="font-bold text-2xl text-[#002C5C]">
+            Job Application Tracker
+          </h1>
+        </div>
+        <div class="header-cards grid grid-cols-3 gap-5">
+          <div class="card-one bg-white p-4 rounded-lg">
+            <p>Total</p>
+            <h2 class="text-blue-400 font-bold text-xl">8</h2>
+          </div>
+          <div class="card-one bg-white p-4 rounded-lg">
+            <p>Interviewed</p>
+            <h2 class="text-green-500 font-bold text-xl">0</h2>
+          </div>
+          <div class="card-one bg-white p-4 rounded-lg">
+            <p>Rejected</p>
+            <h2 class="text-red-500 font-bold text-xl">0</h2>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main Section -->
+    <main class="bg-base-200 py-5">
+      <section class="available-jobs w-10/12 mx-auto">
+        <div
+          class="available-jobs-head flex justify-between border-2 border-red-400 py-4"
+        >
+          <h1 class="font-bold text-xl text-[#002C5C]">available jobs</h1>
+          <p>8 Jobs</p>
+        </div>
+        <!-- Toggling Btn -->
+        <div class="available-jobs-toggle border-2 border-green-500">
+          <button class="btn bg-blue-500 px-6">All</button>
+          <button class="btn">Interviewed</button>
+          <button class="btn">Rejected</button>
+        </div>
+        <div class="available-jobs-card-container grid grid-cols-2 gap-4 pt-6">
+          <div class="available-card bg-white border-2 border-red-500 p-4">
+            <h1>TechNova Inc</h1>
+            <p>Frontend Developer</p>
+            <p>San Francisco, CA • Full-time • $110,000 - $140,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Build responsive web applications using React and Tailwind CSS.
+              Collaborate with designers and backend engineers.
+            </p>
+            <button class="btn text-green-500">Interviewed</button>
+            <button class="btn text-red-500">Rejected</button>
+          </div>
+          <div class="available-card bg-white border border-blue-500 p-4">
+            <h1>DataWave Analytics</h1>
+            <p>Data Analyst</p>
+            <p>New York, NY • Full-time • $90,000 - $120,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Analyze business data using Python, SQL, and visualization tools
+              like Power BI and Tableau.
+            </p>
+            <button class="btn">Interviewed</button>
+            <button class="btn">Rejected</button>
+          </div>
+          <div class="available-card bg-white border border-green-500 p-4">
+            <h1>CloudSync Systems</h1>
+            <p>Backend Developer</p>
+            <p>Austin, TX • Full-time • $130,000 - $165,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Develop scalable APIs using Node.js and MongoDB. Work with AWS
+              cloud infrastructure.
+            </p>
+            <button class="btn">Interviewed</button>
+            <button class="btn">Rejected</button>
+          </div>
+          <div class="available-card bg-white border-2 border-red-500 p-4">
+            <h1>PixelCraft Studio</h1>
+            <p>UI/UX Designer</p>
+            <p>Los Angeles, CA • Part-time • $70,000 - $95,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Design modern and user-friendly interfaces using Figma and Adobe
+              XD.
+            </p>
+            <button class="btn">Interviewed</button>
+            <button class="btn">Rejected</button>
+          </div>
+          <div class="available-card bg-white border-2 border-blue-500 p-4">
+            <h1>AI Fusion Labs</h1>
+            <p>Machine Learning Engineer</p>
+            <p>Boston, MA • Full-time • $140,000 - $180,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Build and deploy ML models using Python, TensorFlow, and cloud
+              platforms.
+            </p>
+            <button class="btn">Interviewed</button>
+            <button class="btn">Rejected</button>
+          </div>
+          <div class="available-card bg-white border border-green-500 p-4">
+            <h1>WebCore Agency</h1>
+            <p>Full Stack Developer</p>
+            <p>Remote • Contract • $80,000 - $110,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Work with React, Node.js, and PostgreSQL to build complete web
+              solutions.
+            </p>
+            <button class="btn">Interviewed</button>
+            <button class="btn">Rejected</button>
+          </div>
+          <div class="available-card bg-white border-2 border-green-500 p-4">
+            <h1>SecureNet Solutions</h1>
+            <p>Cybersecurity Analyst</p>
+            <p>Chicago, IL • Full-time • $100,000 - $130,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Monitor systems, detect threats, and ensure network security
+              compliance.
+            </p>
+            <button class="btn">Interviewed</button>
+            <button class="btn">Rejected</button>
+          </div>
+          <div class="available-card bg-white border-2 border-red-500 p-4">
+            <h1>MobileFirst Apps</h1>
+            <p>React Native Developer</p>
+            <p>Seattle, WA • Full-time • $115,000 - $145,000</p>
+            <button class="btn">Not Applied</button>
+            <p>
+              Develop cross-platform mobile apps using React Native and REST
+              APIs.
+            </p>
+            <button class="btn">Interviewed</button>
+            <button class="btn">Rejected</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
