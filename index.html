@@ -34,7 +34,7 @@
   </head>
   <body class="">
     <!-- Header Section -->
-    <header class="py-5 bg-base-200">
+    <header id="header-section" class="py-5 bg-base-200">
       <section class="header-container w-10/12 mx-auto">
         <div class="header-text">
           <h1 class="font-bold text-2xl text-[#002C5C]">
@@ -44,22 +44,22 @@
         <div class="header-cards grid grid-cols-3 gap-5">
           <div class="card-one bg-white p-4 rounded-lg">
             <p>Total</p>
-            <h2 class="text-blue-400 font-bold text-xl">8</h2>
+            <h2 id="count-total" class="text-blue-400 font-bold text-xl">0</h2>
           </div>
           <div class="card-one bg-white p-4 rounded-lg">
             <p>Interviewed</p>
-            <h2 class="text-green-500 font-bold text-xl">0</h2>
+            <h2 id="count-interviewed" class="text-green-500 font-bold text-xl">0</h2>
           </div>
           <div class="card-one bg-white p-4 rounded-lg">
             <p>Rejected</p>
-            <h2 class="text-red-500 font-bold text-xl">0</h2>
+            <h2 id="count-rejected" class="text-red-500 font-bold text-xl">0</h2>
           </div>
         </div>
       </section>
     </header>
 
-    <!-- Main Section -->
-    <main class="bg-base-200 py-5">
+    <!----------- Main Section ----------->
+    <main id="main-section" class="bg-base-200 py-5">
       <section class="available-jobs w-10/12 mx-auto">
         <div
           class="available-jobs-head flex justify-between border-2 border-red-400 py-4"
@@ -69,11 +69,12 @@
         </div>
         <!-- Toggling Btn -->
         <div class="available-jobs-toggle border-2 border-green-500">
-          <button class="btn bg-blue-500 px-6">All</button>
-          <button class="btn">Interviewed</button>
-          <button class="btn">Rejected</button>
+          <button id="filtered-btn-all" onclick="toggleStyle('filtered-btn-all')" class="btn bg-blue-500 text-white px-6">All</button>
+          <button id="filtered-btn-interviewed" onclick="toggleStyle('filtered-btn-interviewed')" class="btn bg-gray-300">Interviewed</button>
+          <button id="filtered-btn-rejected" onclick="toggleStyle('filtered-btn-rejected')" class="btn bg-gray-300">Rejected</button>
         </div>
-        <div class="available-jobs-card-container grid grid-cols-2 gap-4 pt-6">
+        <!---------------------- All Cards Section ---------------------->
+        <div id="all-cards-section" class="available-jobs-card-container grid grid-cols-2 gap-4 pt-6">
           <div
             class="available-card bg-white border-2 border-red-500 px-4 space-y-2"
           >
@@ -92,7 +93,7 @@
             </p>
             <div class="cards-btn">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
           <div
@@ -111,7 +112,7 @@
             </p>
             <div class="cards-btn">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
           <div
@@ -130,7 +131,7 @@
             </p>
             <div class="cards-btn">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
           <div
@@ -149,9 +150,9 @@
               Design modern and user-friendly interfaces using Figma and Adobe
               XD.
             </p>
-           <div class="cards-btn">
+            <div class="cards-btn">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
           <div
@@ -170,7 +171,7 @@
             </p>
             <div class="cards-btn">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
           <div
@@ -189,7 +190,7 @@
             </p>
             <div class="cards-btn">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
           <div
@@ -208,7 +209,7 @@
             </p>
             <div class="cards-btn">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
           <div
@@ -227,7 +228,7 @@
             </p>
             <div class="cards-btn flex items-center gap-2">
               <button class="btn text-green-500">Interviewed</button>
-            <button class="btn text-red-500">Rejected</button>
+              <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
         </div>
