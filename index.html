@@ -48,11 +48,15 @@
           </div>
           <div class="card-one bg-white p-4 rounded-lg">
             <p>Interviewed</p>
-            <h2 id="count-interviewed" class="text-green-500 font-bold text-xl">0</h2>
+            <h2 id="count-interviewed" class="text-green-500 font-bold text-xl">
+              0
+            </h2>
           </div>
           <div class="card-one bg-white p-4 rounded-lg">
             <p>Rejected</p>
-            <h2 id="count-rejected" class="text-red-500 font-bold text-xl">0</h2>
+            <h2 id="count-rejected" class="text-red-500 font-bold text-xl">
+              0
+            </h2>
           </div>
         </div>
       </section>
@@ -67,27 +71,56 @@
           <h1 class="font-bold text-xl text-[#002C5C]">available jobs</h1>
           <p>8 Jobs</p>
         </div>
+
         <!-- Toggling Btn -->
         <div class="available-jobs-toggle border-2 border-green-500">
-          <button id="filtered-btn-all" onclick="toggleStyle('filtered-btn-all')" class="btn bg-blue-500 text-white px-6">All</button>
-          <button id="filtered-btn-interviewed" onclick="toggleStyle('filtered-btn-interviewed')" class="btn bg-gray-300">Interviewed</button>
-          <button id="filtered-btn-rejected" onclick="toggleStyle('filtered-btn-rejected')" class="btn bg-gray-300">Rejected</button>
+          <button
+            id="filtered-btn-all"
+            onclick="toggleStyle('filtered-btn-all')"
+            class="btn bg-blue-500 text-white px-6"
+          >
+            All
+          </button>
+          <button
+            id="filtered-btn-interviewed"
+            onclick="toggleStyle('filtered-btn-interviewed')"
+            class="btn bg-gray-300"
+          >
+            Interviewed
+          </button>
+          <button
+            id="filtered-btn-rejected"
+            onclick="toggleStyle('filtered-btn-rejected')"
+            class="btn bg-gray-300"
+          >
+            Rejected
+          </button>
         </div>
+
+        <!----------------Filtered Section --------------------->
+
+        <section id="filtered-section" class="hidden"></section>
+
         <!---------------------- All Cards Section ---------------------->
-        <div id="all-cards-section" class="available-jobs-card-container grid grid-cols-2 gap-4 pt-6">
+        <div
+          id="all-cards-section"
+          class="available-jobs-card-container grid grid-cols-2 gap-4 pt-6"
+        >
+          <!------------------ Card One -------------------->
+
           <div
             class="available-card bg-white border-2 border-red-500 px-4 space-y-2"
           >
-            <div class="trash-btn flex justify-between pt-4">
-              <h1 class="text-xl font-bold">TechNova Inc</h1>
-              <span><i class="fa-regular fa-trash-can"></i></span>
+            <div class="technova-inc-header flex justify-between pt-4">
+              <h1 class="company-name text-xl font-bold">TechNova Inc</h1>
+              <span><i class="trash-btn fa-regular fa-trash-can"></i></span>
             </div>
-            <p class="text-sm">Frontend Developer</p>
-            <p class="text-sm">
+            <p class="job-title text-sm">Frontend Developer</p>
+            <p class="address text-sm">
               San Francisco, CA • Full-time • $110,000 - $140,000
             </p>
-            <button class="btn">Not Applied</button>
-            <p class="text-sm">
+            <button class="not-applied-btn btn">Not Applied</button>
+            <p class="job-description text-sm">
               Build responsive web applications using React and Tailwind CSS.
               Collaborate with designers and backend engineers.
             </p>
@@ -96,6 +129,7 @@
               <button class="btn text-red-500">Rejected</button>
             </div>
           </div>
+
           <div
             class="available-card bg-white border border-blue-500 px-4 space-y-2"
           >
